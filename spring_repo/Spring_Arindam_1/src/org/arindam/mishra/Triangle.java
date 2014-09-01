@@ -4,7 +4,7 @@ public class Triangle {
 	private String type ;
 	
 	private int height ;
-	//Here we are using constructor injection .Notice that we are not using the setType() and setHeight .
+	//Here we are using Object Injection .Notice that we are not using the setType() and setHeight .
 	//I have eliminated the setter injection 
 	// If Spring use setter for initializing type . I have to set the <property> tag in the spring.xml file .
 	
