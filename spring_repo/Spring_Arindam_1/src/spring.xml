@@ -26,6 +26,13 @@
    <property name="x" value="20"/>
    <property name="y" value="0"/>  
    </bean>
-   
+   <!--
+   // Below is the configuration of spring.xml .If I use contructor injection .
+	/*<bean id ="triangle" class="org.arindam.mishra.Triangle">
+	   <constructor-arg index="0" value = "Equilateral"/>
+	   <constructor-arg index="1" value = "20"/>
+	  
+	   </bean>*/
+   -->
  
  </beans>
