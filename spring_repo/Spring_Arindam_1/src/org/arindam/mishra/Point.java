@@ -1,6 +1,7 @@
 package org.arindam.mishra;
 
 //These are coordinates
+//This is a simple POJO , with two class members and their getters and setters 
 
 public class Point {
   private int x ;
