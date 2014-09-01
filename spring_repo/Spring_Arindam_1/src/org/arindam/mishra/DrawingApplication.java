@@ -31,9 +31,10 @@ public class DrawingApplication {
 		triangle.draw();
 		Triangle_point_object triangle_point =(Triangle_point_object)context.getBean("triangle_point_object");
 		triangle_point.draw(); 
-        /*Point local_point=(Point)triangle_point.getPointB();
+		// We can fetch the triangle_point to get the values set by Application Context (SPRING)
+        Point local_point=(Point)triangle_point.getPointB();
         System.out.println("x coordinate "+local_point.getX()+" y coordinate "+local_point.getY());
-		*/
+		
 		/*  System.out.println(Triangle.Rand());
     System.out.println(Triangle.Rand());
 	*/	
