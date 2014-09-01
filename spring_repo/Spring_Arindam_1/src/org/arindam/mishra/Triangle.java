@@ -4,7 +4,18 @@ public class Triangle {
 	private String type ;
 	
 	private int height ;
-	
+	//Here we are using constructor injection .Notice that we are not using the setType() and setHeight .
+	//I have eliminated the setter injection 
+	// If Spring use setter for initializing type . I have to set the <property> tag in the spring.xml file .
+	// Like <property name="type" value = "Equilateral"></property>
+ 
+	/*public void setType(String type) {
+		this.type = type;
+	}
+
+*/ 
+
+      // Below is the configuration of spring.xml .If I use contructor injection .
 	/*<bean id ="triangle" class="org.arindam.mishra.Triangle">
 	   <constructor-arg index="0" value = "Equilateral"/>
 	   <constructor-arg index="1" value = "20"/>
@@ -36,13 +47,7 @@ public Triangle(String type,int height){
 	}
 
 
- // Here spring is using setter for initializing type . This is called setter injection .
- //There is another way of injection called Constructor injection .
-	/*public void setType(String type) {
-		this.type = type;
-	}
-	<property name="type" value = "Equilateral"></property>
-*/
+ 
 
 
 public void draw(){
