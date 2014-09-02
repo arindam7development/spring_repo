@@ -6,7 +6,14 @@
    <constructor-arg index="1" value = "20"/>
    
    </bean>
-   <bean id ="triangle_list_point_object" class="org.arindam.mishra.Triangle_list_point_object">
+    
+    <bean id ="triangle_point_object" class="org.arindam.mishra.Triangle_point_object">
+   <property name="pointA" ref="zeroPoint"/>
+   <property name="pointB" ref="Point2"/>
+   <property name="pointC" ref="Point3"/>
+   </bean>
+    
+    <bean id ="triangle_list_point_object" class="org.arindam.mishra.Triangle_list_point_object">
    <property name="points">
    <list>
     <ref bean="zeroPoint"/>
