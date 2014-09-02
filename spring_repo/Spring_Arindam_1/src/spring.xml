@@ -11,6 +11,15 @@
    <property name="pointB" ref="Point2"/>
    <property name="pointC" ref="Point3"/>
    </bean>
+   <bean id ="triangle_list_point_object" class="org.arindam.mishra.Triangle_list_point_object">
+    <property name="points">
+      <list>
+        <ref bean="zeroPoint"/>
+        <ref bean="Point2"/>
+        <ref bean="Point3"/>
+       </list>
+     </property>
+   </bean>
    
    <bean id ="zeroPoint" class="org.arindam.mishra.Point">
    <property name="x" value="0"/>
@@ -26,13 +35,6 @@
    <property name="x" value="20"/>
    <property name="y" value="0"/>  
    </bean>
-   <!--
-   // Below is the configuration of spring.xml .If I use contructor injection .
-	/*<bean id ="triangle" class="org.arindam.mishra.Triangle">
-	   <constructor-arg index="0" value = "Equilateral"/>
-	   <constructor-arg index="1" value = "20"/>
-	  
-	   </bean>*/
-   -->
+   
  
  </beans>
