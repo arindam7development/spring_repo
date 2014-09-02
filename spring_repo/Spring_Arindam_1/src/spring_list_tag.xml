@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+ <beans>
+   <bean id ="triangle" class="org.arindam.mishra.Triangle">
+   <constructor-arg index="0" value = "Equilateral"/>
+   <constructor-arg index="1" value = "20"/>
+   
+   </bean>
+   <bean id ="triangle_point_object" class="org.arindam.mishra.Triangle_list_point_object">
+   <property name="points">
+   <list>
+    <ref bean="zeroPoint"/>
+    <ref bean="Point2"/>
+    <ref bean="Point3"/>
+   </list>
+   </property>
+   </bean>
+   
+   
+   <bean id ="zeroPoint" class="org.arindam.mishra.Point">
+   <property name="x" value="0"/>
+   <property name="y" value="0"/>  
+   </bean>
+   
+   <bean id ="Point2" class="org.arindam.mishra.Point">
+   <property name="x" value="-20"/>
+   <property name="y" value="0"/>  
+   </bean>
+   
+   <bean id ="Point3" class="org.arindam.mishra.Point">
+   <property name="x" value="20"/>
+   <property name="y" value="0"/>  
+   </bean>
+   
+ 
+ </beans>
