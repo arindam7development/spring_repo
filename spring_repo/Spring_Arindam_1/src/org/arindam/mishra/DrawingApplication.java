@@ -29,16 +29,22 @@ public class DrawingApplication {
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		Triangle triangle = (Triangle) context.getBean("triangle");
 		triangle.draw();
+        Triangle_point_object triangle_inherit = (Triangle_point_object) context.getBean("triangle1");
+		triangle_inherit.draw();
+		System.out.println("Hi bean inheritance");
+		//Now if we are inheriting beans with list of objects
+		
+		Triangle_list_point_object triangleList1_inherit = (Triangle_list_point_object) context.getBean("triangleList1");
+		triangleList1_inherit.draw();
+		System.out.println("Inheriting the list objects");
 		Triangle_point_object triangle_point =(Triangle_point_object)context.getBean("triangle_point_object");
-		triangle_point.draw(); 
+		triangle_point.draw();
+		Triangle_list_point_object triangle_point_new =(Triangle_list_point_object)context.getBean("triangle_list_point_object");
+		triangle_point_new.draw();
 		
-		// We can fetch the triangle_point to get the values set by Application Context (SPRING)
-        Point local_point=(Point)triangle_point.getPointB();
+        /*Point local_point=(Point)triangle_point.getPointB();
         System.out.println("x coordinate "+local_point.getX()+" y coordinate "+local_point.getY());
-		
-	      Triangle_list_point_object triangle_point_new =(Triangle_list_point_object)context.getBean("triangle_list_point_object");
-	      triangle_point_new.draw();
-		
+		*/
 		/*  System.out.println(Triangle.Rand());
     System.out.println(Triangle.Rand());
 	*/	
