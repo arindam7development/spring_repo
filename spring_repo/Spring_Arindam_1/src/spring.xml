@@ -4,8 +4,37 @@
    <bean id ="triangle" class="org.arindam.mishra.Triangle">
    <constructor-arg index="0" value = "Equilateral"/>
    <constructor-arg index="1" value = "20"/>
-   
    </bean>
+   
+   
+   <bean id ="parent_triangle" class="org.arindam.mishra.Triangle_point_object">
+   <property name="pointA" ref="zeroPoint"/>
+   </bean>
+   <bean id ="triangle1" class="org.arindam.mishra.Triangle_point_object" parent="parent_triangle">
+   <property name="pointB" ref="Point2"/>
+   <property name="pointC" ref="Point3"/>
+   </bean>
+   <bean id ="triangle2" class="org.arindam.mishra.Triangle_point_object" parent="parent_triangle" >
+   <property name="pointB" ref="Point2"/>
+   </bean>
+   <!-- If we have a list of objects in our bean-->
+   
+   <bean id ="parent_triangle_list" class="org.arindam.mishra.Triangle_list_point_object">
+     <property name="points">
+     <list>
+       <ref bean="zeroPoint"/>
+     </list>
+     </property>    
+        </bean>
+   <bean id ="triangleList1" class="org.arindam.mishra.Triangle_list_point_object" parent="parent_triangle_list">
+   <property name="points">
+     <list merge="true">
+       <ref bean="Point2"/>
+     </list>
+     </property>
+   </bean>
+    
+   
    <bean id ="triangle_point_object" class="org.arindam.mishra.Triangle_point_object">
    <property name="pointA" ref="zeroPoint"/>
    <property name="pointB" ref="Point2"/>
