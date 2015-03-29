@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+ <beans>
+   <bean id ="employee" class="org.arindam._02.Employee_v2">
+     <property name="p1">
+           <list>
+                <ref bean="prop1"/>
+                <ref bean="prop2"/> 
+           </list>
+      </property>
+   </bean>
+   
+   <bean id="prop1" class="org.arindam._02.Properties">
+      <property name="first_name" value="Arindam"></property>
+      <property name="last_name" value="Mishra"></property>
+      <property name="id" value="277544"></property>
+   </bean>
+   <bean id="prop2" class="org.arindam._02.Properties">
+      <property name="first_name" value="Hewlett"></property>
+      <property name="last_name" value="Packard"></property>
+      <property name="id" value="277545"></property>
+   </bean>
+  
+   </beans>

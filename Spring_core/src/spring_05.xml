@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+ <beans>
+   <!-- Coding through interfaces -->
+     
+   
+   <bean id ="triangle" class="org.arindam._02.Triangle">
+   <property name="pointA" ref="PointA"/>
+   <property name="pointB" ref="PointB"/>
+   <property name="pointC" ref="PointC"/>
+   </bean>
+  
+  <bean id ="circle" class="org.arindam._02.Circle">
+   <property name="center" ref="PointA"/>
+   
+   </bean>
+  
+   
+   <bean id ="PointA" class="org.arindam._02.Point">
+   <property name="x" value="0"/>
+   <property name="y" value="0"/>  
+   </bean>
+   
+   <bean id ="PointB" class="org.arindam._02.Point">
+   <property name="x" value="-20"/>
+   <property name="y" value="0"/>  
+   </bean>
+   
+   <bean id ="PointC" class="org.arindam._02.Point">
+   <property name="x" value="20"/>
+   <property name="y" value="0"/>  
+   </bean>
+   
+ 
+ </beans>

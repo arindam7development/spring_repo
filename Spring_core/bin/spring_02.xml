@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+ <beans>
+   <bean id ="employee" class="org.arindam._01.Employee">
+   <constructor-arg index ="0" value="Arindam"></constructor-arg>
+   <constructor-arg index="1" type="java.lang.String" value="Mishra"></constructor-arg>
+   </bean>
+   </beans>
