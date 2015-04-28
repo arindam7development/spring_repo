@@ -71,7 +71,7 @@ public class VideoController    {
 	 * \|_______|\|_______|\|_______|\|_______|
 	 * \|_______|\|_______|\|_______|\|__| \|__|
 	 * 
-	 * Thanks a lot
+	 * 
 	 */
 
 	private List<Video> videos = new CopyOnWriteArrayList<Video>();
