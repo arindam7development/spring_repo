@@ -42,7 +42,7 @@ import org.apache.commons.lang3.text.WordUtils;
  * 
  * @author jules
  *
- *                       DO NOT MODIFY THIS CLASS
+ *                      
                     ___                    ___           ___                            
      _____         /\  \                  /\  \         /\  \                           
     /::\  \       /::\  \                 \:\  \       /::\  \         ___              
