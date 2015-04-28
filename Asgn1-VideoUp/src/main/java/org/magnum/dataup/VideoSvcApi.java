@@ -18,7 +18,7 @@
 package org.magnum.dataup;
 
 /**
- *                       DO NOT MODIFY THIS INTERFACE
+ *                      
                     ___                    ___           ___                            
      _____         /\  \                  /\  \         /\  \                           
     /::\  \       /::\  \                 \:\  \       /::\  \         ___              
